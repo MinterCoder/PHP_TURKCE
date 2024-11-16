@@ -17,7 +17,7 @@ class Car {
 $car = new Car();
 
 echo "SATIR NUMARASI : " . __LINE__ . "<br>"; // SATIR NUMARASI : 2
-echo "Dosya ismi ve full path : " . __FILE__ . "<br>"; // // Dosya ismi ve full path : /opt/lampp/htdocs/PHP_TURKCE/7-magic_lines.php
+echo "Dosya ismi ve full path : " . __FILE__ . "<br>"; // // Dosya ismi ve full path : /opt/lampp/htdocs/PHP_TURKCE/6-magic_lines.php
 echo "Klasör İsmi : " . __DIR__ . "<br>"; // Klasör İsmi : /opt/lampp/htdocs/PHP_TURKCE
 function MyPhp(){
     echo "Fonksiyon ismi : " . __FUNCTION__ . "<br>";

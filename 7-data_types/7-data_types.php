@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <title>Data Types (Veri Tipleri)</title>
 </head>
@@ -43,11 +43,19 @@
     $myBinaryValue = 0x100;
     $myOctalValue = 0x1000;
     echo "Int value : " . $myIntValue . " Hexadecimal : " . $myHexadecimalValue . " Binary : " . $myBinaryValue . " Octal : " . $myOctalValue . "<br>";
+    echo "is int (myIntValue) = " . is_int($myIntValue) . "<br>";
+    echo "is integer (myIntValue) = " . is_integer($myIntValue) . "<br>";
+    echo "is long (myIntValue) = " . is_long($myIntValue) . "<br>";
+    echo "MAX INTEGER : " . PHP_INT_MAX . "<br>";
+    echo "MIN INTEGER : " . PHP_INT_MIN . "<br>";
+    echo "SIZE INTEGER : " . PHP_INT_SIZE . "<br>";
 
-    // DOUBLES : Double değişkenler kayan sayılar (floating point numbers - float) olarak bilinir.
+
+
+    // DOUBLES : Double değişkenler kayan sayılar (floating point numbers - float) olarak bilinir. Double değişkenimiz de double mı değil mi onu da is_float() fonksiyonuyla öğrenebiliriz.
     $myFloatValue = 12.34;
     echo "My float value : " . $myFloatValue . "<br>";
-
+    echo is_float($myFloatValue) . "<br>";
     /* BOOLEANS : "bool" veri tipi daha çok bir şeyi sınamada kullanılır.
     Yani bir şey doğru mu yanlış mı bunu belirtmede kullanabiliriz.
      Örneğin 18 yaşından büyük mü değil mi gibi... Bu yüzden 2 tane değer alır "true" ve "false".
